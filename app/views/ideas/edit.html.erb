@@ -1,0 +1,13 @@
+<h1>Editing Idea #<%= @idea.id %></h1>
+
+<form action="/ideas/<%= @idea.id %>/update">
+  <div>
+    <label for="log">Idea</label><br />
+    <input id="log" name="log" type="text" class = "form-control" placeholder = "The wheel" style = "display:inline" value = "<%= @idea.log %>">
+  </div>
+  <div>
+    <br>
+    <input type="submit" class="btn btn-primary">
+  </div>
+</form>
+

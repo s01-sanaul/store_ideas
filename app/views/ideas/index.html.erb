@@ -1,0 +1,22 @@
+<h1>List of ideas</h1>
+
+<p><a href="/new_idea">Add a New Idea</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @ideas.each do |idea| %>
+    <tr>
+      <td><a href = "/ideas/<%= idea.id %>" class = "list-group-item"><%= idea.log %></a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

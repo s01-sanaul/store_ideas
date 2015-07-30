@@ -1,0 +1,11 @@
+<h1>Idea #<%= @idea.id %></h1>
+
+<div>
+  <strong>Idea</strong>:<br />
+  <p><%= @idea.log %></p>
+</div>
+
+<a href="/ideas/<%= @idea.id %>/edit">Edit</a> |
+<a href="/ideas/<%= @idea.id %>/destroy">Destroy</a> |
+<a href="/ideas">All</a> |
+<a href="/new_idea">New</a>
